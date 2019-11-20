@@ -8,7 +8,7 @@ data2 = subset(data, Date == "2/2/2007")
 data = rbind(data1, data2)
 data$Date <- as.Date(data$Date, format = '%d/%m/%Y')
 data$DateTime <- as.POSIXct(paste(data$Date, data$Time))
-png(filename = "1.4.png", width = 480, height = 480, units = 'px')
+png(filename = "plot4.png", width = 480, height = 480, units = 'px')
 par(mfrow = c(2, 2))
 
 with(data, {
